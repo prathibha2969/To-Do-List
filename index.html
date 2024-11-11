@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prathibha's To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Prathibha's To-Do List</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <button class="category-btn" id="personal-btn" onclick="showCategory('personal')">Personal <span id="personal-count">0</span></button>
+            <button class="category-btn" id="study-btn" onclick="showCategory('study')">Study <span id="study-count">0</span></button>
+            <button class="category-btn" id="health-btn" onclick="showCategory('health')">Health <span id="health-count">0</span></button>
+            <button class="category-btn" id="wish-btn" onclick="showCategory('wish')">Wish List <span id="wish-count">0</span></button>
+        </div>
+        <div class="main-content">
+
+            <div class="input-container">
+                <input type="text" id="todo-input" placeholder="Add a new task...">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+
+            <div class="category-section" id="personal-section">
+                <h2>Personal</h2>
+                <ul id="personal-list" class="todo-list"></ul>
+            </div>
+            <div class="category-section" id="study-section">
+                <h2>Study</h2>
+                <ul id="study-list" class="todo-list"></ul>
+            </div>
+            <div class="category-section" id="health-section">
+                <h2>Health</h2>
+                <ul id="health-list" class="todo-list"></ul>
+            </div>
+            <div class="category-section" id="wish-section">
+                <h2>Wish List</h2>
+                <ul id="wish-list" class="todo-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
